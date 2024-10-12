@@ -28,4 +28,24 @@ public class Tests
         // Assert
         Assert.That(result, Is.False);
     }
+    
+    [Test]
+    public void MultipleUniqueLetters_IsIsogram()
+    {
+        // Act
+        var result = Kata.IsIsogram("abc");
+
+        // Assert
+        Assert.That(result, Is.True);
+    }
+    
+    [Test]
+    public void MixedUniqueAndRepeatingLetters_IsNotIsogram()
+    {
+        // Act
+        var result = Kata.IsIsogram("abcabc");
+
+        // Assert
+        Assert.That(result, Is.False);
+    }
 }
