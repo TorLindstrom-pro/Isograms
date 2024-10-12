@@ -6,6 +6,6 @@ public class Kata
 {
     public static bool IsIsogram(string str)
     {
-        return str.Distinct().Count() == str.Length;
+        return str.ToLower().Distinct().Count() == str.Length;
     }
 }

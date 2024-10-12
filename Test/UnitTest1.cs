@@ -48,4 +48,14 @@ public class Tests
         // Assert
         Assert.That(result, Is.False);
     }
+    
+    [Test]
+    public void SameLetters_DifferentCase_IsNotIsogram()
+    {
+        // Act
+        var result = Kata.IsIsogram("abcABC");
+
+        // Assert
+        Assert.That(result, Is.False);
+    }
 }
