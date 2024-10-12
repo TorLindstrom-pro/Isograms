@@ -1,3 +1,5 @@
+using Isograms;
+
 namespace Test;
 
 public class Tests
@@ -8,8 +10,12 @@ public class Tests
     }
 
     [Test]
-    public void Test1()
+    public void SingleLetter_IsIsogram()
     {
-        Assert.Pass();
+        // Act
+        var result = Kata.IsIsogram("a");
+
+        // Assert
+        Assert.That(result, Is.True);
     }
 }
