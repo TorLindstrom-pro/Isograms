@@ -4,6 +4,6 @@ public class Kata
 {
     public static bool IsIsogram(string str)
     {
-        return true;
+        return str.Length == 1;
     }
 }

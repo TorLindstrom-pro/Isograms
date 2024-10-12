@@ -18,4 +18,14 @@ public class Tests
         // Assert
         Assert.That(result, Is.True);
     }
+    
+    [Test]
+    public void RepeatingLetters_IsNotIsogram()
+    {
+        // Act
+        var result = Kata.IsIsogram("aa");
+
+        // Assert
+        Assert.That(result, Is.False);
+    }
 }
