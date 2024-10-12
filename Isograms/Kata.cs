@@ -1,3 +1,5 @@
+using System.Linq;
+
 namespace Isograms;
 
 public class Kata
